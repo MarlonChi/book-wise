@@ -4,9 +4,9 @@ import { Button } from "@/components/button";
 import LoginImage from "@/assets/login-image.jpg";
 import { GitHubIcon, GoogleIcon, GuestIcon } from "@/assets/icons";
 
-export default function Home() {
+export default function Login() {
   return (
-    <main className="p-5 flex">
+    <main className="flex">
       <div>
         <Image src={LoginImage} alt="BookWise" className="rounded-xl" />
       </div>
