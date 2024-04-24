@@ -3,6 +3,7 @@ import {
   SignIn,
   ChartLineUp,
   Binoculars,
+  User,
 } from "@phosphor-icons/react/dist/ssr";
 
 import { BookWiseLogo } from "@/assets/icons";
@@ -28,6 +29,12 @@ export const Menu = () => {
             <Link href="" className="flex gap-3">
               <Binoculars size={24} />
               Explorar
+            </Link>
+          </li>
+          <li>
+            <Link href="" className="flex gap-3">
+              <User size={24} />
+              Perfil
             </Link>
           </li>
         </ul>

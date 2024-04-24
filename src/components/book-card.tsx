@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { RatingStars } from "./rating-stars";
 
 export const BookCard = () => {
   return (
@@ -19,7 +20,9 @@ export const BookCard = () => {
           <p className="text-gray-400">J.R.R. Tolkien</p>
         </div>
 
-        <div>Rating stars</div>
+        <div>
+          <RatingStars />
+        </div>
       </div>
     </div>
   );

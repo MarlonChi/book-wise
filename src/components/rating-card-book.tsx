@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { RatingStars } from "./rating-stars";
 
 export const RatingCardBook = () => {
   return (
@@ -18,7 +19,9 @@ export const RatingCardBook = () => {
             <p className="text-gray-400">Hoje</p>
           </div>
         </div>
-        <div>Rating stars</div>
+        <div>
+          <RatingStars />
+        </div>
       </header>
 
       <div className="mt-8 flex gap-5">
