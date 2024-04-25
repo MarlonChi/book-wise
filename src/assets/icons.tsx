@@ -30,8 +30,8 @@ export const BookWiseLogo = () => {
           y2="16.3137"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#7FD1CC" />
-          <stop offset="1" stop-color="#9694F5" />
+          <stop stopColor="#7FD1CC" />
+          <stop offset="1" stopColor="#9694F5" />
         </linearGradient>
       </defs>
     </svg>
@@ -47,7 +47,7 @@ export const GoogleIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_526_69)">
+      <g clipPath="url(#clip0_526_69)">
         <path
           d="M31.2523 16.2994C31.2523 14.9884 31.1459 14.0317 30.9157 13.0396H15.9451V18.9569H24.7325C24.5554 20.4274 23.5987 22.642 21.4726 24.1301L21.4428 24.3282L26.1763 27.9952L26.5042 28.0279C29.516 25.2463 31.2523 21.1537 31.2523 16.2994Z"
           fill="#4285F4"
@@ -83,7 +83,7 @@ export const GitHubIcon = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_526_62)">
+      <g clipPath="url(#clip0_526_62)">
         <mask
           id="mask0_526_62"
           maskUnits="userSpaceOnUse"

@@ -7,14 +7,23 @@ import {
 } from "@phosphor-icons/react/dist/ssr";
 
 import { BookWiseLogo } from "@/assets/icons";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
-export const Menu = () => {
+export const Menu = async () => {
+  const session = await getServerSession();
+
+  if (!session) {
+    redirect("/");
+  }
+
   return (
     <nav className="col-span-2 max-h-[95vh] w-full flex flex-col items-center justify-between bg-gray-700 rounded-xl">
       <div>
         <div className="mt-10">
           <BookWiseLogo />
         </div>
+        <div>Olá, {session.user?.name}</div>
         <ul className="mt-16 flex gap-5 flex-col">
           <li>
             <Link

@@ -2,7 +2,9 @@ import Image from "next/image";
 
 import { Button } from "@/components/button";
 import LoginImage from "@/assets/login-image.jpg";
-import { GitHubIcon, GoogleIcon, GuestIcon } from "@/assets/icons";
+import { GuestIcon } from "@/assets/icons";
+import { GoogleAuthButton } from "./components/google-auth-button";
+import { GithubAuthButton } from "./components/github-auth-button";
 
 export default function Login() {
   return (
@@ -16,14 +18,8 @@ export default function Login() {
           Faça seu login ou acesse como visitante.
         </p>
         <div className="flex flex-col gap-4 mt-10">
-          <Button>
-            <GoogleIcon />
-            Entrar com Google
-          </Button>
-          <Button>
-            <GitHubIcon />
-            Entrar com GitHub
-          </Button>
+          <GoogleAuthButton />
+          <GithubAuthButton />
           <Button>
             <GuestIcon />
             Acessar como visitante
