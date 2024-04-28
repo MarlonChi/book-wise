@@ -10,7 +10,13 @@ export default function Login() {
   return (
     <main className="flex">
       <div>
-        <Image src={LoginImage} alt="BookWise" className="rounded-xl" />
+        <Image
+          src={LoginImage}
+          alt="BookWise"
+          className="rounded-xl"
+          priority={false}
+          placeholder="empty"
+        />
       </div>
       <div className="flex justify-center flex-col m-auto">
         <h2 className="text-2xl font-bold">Boas vindas!</h2>
