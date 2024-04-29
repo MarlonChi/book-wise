@@ -5,8 +5,11 @@ import LoginImage from "@/assets/login-image.jpg";
 import { GuestIcon } from "@/assets/icons";
 import { GoogleAuthButton } from "./components/google-auth-button";
 import { GithubAuthButton } from "./components/github-auth-button";
+import { serverSession } from "@/lib/auth/get-server-session";
 
-export default function Login() {
+export default async function Login() {
+  const session = await serverSession();
+
   return (
     <main className="flex">
       <div>
@@ -14,8 +17,7 @@ export default function Login() {
           src={LoginImage}
           alt="BookWise"
           className="rounded-xl"
-          priority={false}
-          placeholder="empty"
+          priority
         />
       </div>
       <div className="flex justify-center flex-col m-auto">
