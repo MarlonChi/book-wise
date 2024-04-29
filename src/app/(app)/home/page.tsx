@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ChartLineUp, CaretRight } from "@phosphor-icons/react/dist/ssr";
 
-import { RatingCardBook } from "@/components/rating-card-book";
 import { BookCard } from "@/components/book-card";
 import { Menu } from "@/components/menu";
+import { Feed } from "./components/feed";
 
 export default function Home() {
   return (
@@ -18,15 +18,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10">
-            <h4 className="text-sm">Avaliações mais recentes</h4>
-
-            <div className="mt-4">
-              <div className="flex flex-col gap-3">
-                <RatingCardBook />
-                <RatingCardBook />
-                <RatingCardBook />
-              </div>
-            </div>
+            <Feed />
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function LoadingHome() {
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-bw-gray-800">
+    <div className="flex h-screen w-screen items-center justify-center bg-gray-800">
       <Image
         src="/logo.svg"
         alt=""
