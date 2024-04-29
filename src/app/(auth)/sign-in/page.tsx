@@ -1,15 +1,11 @@
 import Image from "next/image";
 
-import { Button } from "@/components/button";
 import LoginImage from "@/assets/login-image.jpg";
-import { GuestIcon } from "@/assets/icons";
 import { GoogleAuthButton } from "./components/google-auth-button";
 import { GithubAuthButton } from "./components/github-auth-button";
-import { serverSession } from "@/lib/auth/get-server-session";
+import { VisitorButton } from "./components/visitor-button";
 
 export default async function Login() {
-  const session = await serverSession();
-
   return (
     <main className="flex">
       <div>
@@ -28,10 +24,7 @@ export default async function Login() {
         <div className="flex flex-col gap-4 mt-10">
           <GoogleAuthButton />
           <GithubAuthButton />
-          <Button>
-            <GuestIcon />
-            Acessar como visitante
-          </Button>
+          <VisitorButton />
         </div>
       </div>
     </main>
