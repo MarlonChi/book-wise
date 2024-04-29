@@ -10,7 +10,7 @@ export default function Home() {
     <section className="grid grid-cols-12 gap-16 h-full">
       <Menu />
 
-      <div className="col-span-7 mt-14">
+      <div className="col-span-6 mt-14">
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <ChartLineUp className="text-green-100 text-3xl" />

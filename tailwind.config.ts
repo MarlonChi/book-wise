@@ -72,8 +72,17 @@ const config: Config = {
         800: "#0E1116",
       },
 
-      "gradient-vertical": `linear-gradient(180deg, #7FD1CC 0%, #9694F5 100%)`,
-      "gradient-horizontal": `linear-gradient(90deg, #7FD1CC 0%, #9694F5 100%)`,
+      red: {
+        500: "#F75A68",
+      },
+    },
+
+    backgroundImage: {
+      "bw-gradient-horizontal":
+        "linear-gradient(90deg, rgba(127,209,204,1) 0%, rgba(150,148,245,1) 100%)",
+      "bw-gradient-vertical":
+        "linear-gradient(180deg, rgba(127,209,204,1) 0%, rgba(150,148,245,1) 100%)",
+      sidebar: 'url("/background.svg")',
     },
 
     radii: {
