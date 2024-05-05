@@ -1,29 +1,49 @@
+import { PopularBook } from "@/interfaces/book";
+import { Star } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
-import React from "react";
-import { RatingStars } from "./rating-stars";
+import Link from "next/link";
 
-export const BookCard = () => {
+interface BookCardProps extends PopularBook {
+  onPress?: (id: string) => void;
+}
+
+export function BookCard(props: BookCardProps) {
   return (
-    <div className="bg-gray-700 rounded-lg p-6 flex gap-5">
-      <div className="rounded-md">
-        <Image
-          src="/images/books/Book.png"
-          alt=""
-          width={64}
-          height={94}
-          className="w-16 h-24"
-        />
-      </div>
-      <div className="flex flex-1 flex-col justify-between">
+    <div
+      key={props.id}
+      className="flex gap-5 rounded-lg border-2 border-solid border-transparent bg-bw-gray-700 px-5 py-4 transition hover:border-bw-gray-600"
+    >
+      <Image
+        src={`/images/books/${props.cover_url}.png`}
+        alt=""
+        width={500}
+        height={700}
+        className="flex w-[100px] rounded-lg object-cover max-2xl:w-24 max-xl:w-16 max-lg:w-24"
+      />
+      <div className="flex flex-col justify-between">
         <div>
-          <h3 className="font-bold">O Hobbit</h3>
-          <p className="text-gray-400">J.R.R. Tolkien</p>
+          <Link
+            prefetch={false}
+            href={`/books/${props.id}`}
+            className="line-clamp-3 text-xl font-bold text-bw-gray-100 hover:text-bw-purple-100 max-2xl:text-lg max-xl:line-clamp-1"
+            passHref
+          >
+            {props.name}
+          </Link>
+          <span className="text-bw-gray-400">{props.author}</span>
         </div>
-
-        <div>
-          <RatingStars />
+        <div className="flex gap-1">
+          {Array.from({ length: 5 }).map((_, index) => {
+            return (
+              <Star
+                key={index}
+                className="text-bw-purple-100 max-xl:h-4 max-xl:w-4 max-lg:h-5 max-lg:w-5"
+                fill={index + 1 <= props.rate ? "#8381D9" : "transparent"}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
   );
-};
+}

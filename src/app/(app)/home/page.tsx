@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ChartLineUp, CaretRight } from "@phosphor-icons/react/dist/ssr";
 
-import { BookCard } from "@/components/book-card";
 import { Menu } from "@/components/menu";
 import { Feed } from "./components/feed";
+import { BooksList } from "./components/book-list";
 
 export default function Home() {
   return (
@@ -23,22 +23,24 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-span-3 flex flex-col gap-4 mt-36">
-        <div className="flex items-center justify-between">
-          <h4 className="text-sm">Livros populares</h4>
-          <Link
-            href="/"
-            className="flex items-center gap-4 text-purple-100 text-sm font-bold"
-          >
-            Ver todos
-            <CaretRight />
-          </Link>
-        </div>
-
-        <div className="flex flex-col gap-3">
-          <BookCard />
-          <BookCard />
-          <BookCard />
+      <div className="col-span-3 mt-36">
+        <div className="flex h-full flex-col items-center">
+          <div className="sticky top-20 flex w-full flex-col gap-4 max-2xl:top-16 max-lg:static">
+            <div className="flex w-full justify-between">
+              <h2 className="flex text-left text-sm text-bw-gray-100">
+                Livros populares
+              </h2>
+              <Link
+                prefetch={false}
+                href="/explore"
+                className="flex items-center gap-2 text-sm text-bw-purple-100"
+              >
+                <span>Ver todos</span>
+                <CaretRight />
+              </Link>
+            </div>
+            <BooksList />
+          </div>
         </div>
       </div>
     </section>
