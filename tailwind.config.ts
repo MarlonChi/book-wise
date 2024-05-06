@@ -72,6 +72,8 @@ const config: Config = {
         800: "#0E1116",
       },
 
+      transparent: 'transparent',
+
       red: {
         500: "#F75A68",
       },
