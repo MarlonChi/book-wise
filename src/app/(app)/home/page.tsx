@@ -8,9 +8,8 @@ import { BooksList } from "./components/book-list";
 export default function Home() {
   return (
     <section className="grid grid-cols-12 gap-16 h-full">
-      <Menu />
 
-      <div className="col-span-6 mt-14">
+      <div className="col-span-8 mt-14">
         <div className="flex flex-col gap-3">
           <div className="flex gap-3">
             <ChartLineUp className="text-green-100 text-3xl" />
@@ -23,7 +22,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="col-span-3 mt-36">
+      <div className="col-span-4 mt-36">
         <div className="flex h-full flex-col items-center">
           <div className="sticky top-20 flex w-full flex-col gap-4 max-2xl:top-16 max-lg:static">
             <div className="flex w-full justify-between">

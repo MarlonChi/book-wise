@@ -9,11 +9,9 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: {
-    template: '%s | BookWise',
-    default: 'BookWise',
-  },
-}
+  title: "Book Wise",
+  description: "Book Wise",
+};
 
 export default async function RootLayout({
   children,
@@ -25,7 +23,7 @@ export default async function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${nunito.className} bg-gray-800 h-screen text-gray-100 p-5 max-w-[1440px] m-auto antialiased`}
+        className={`${nunito.className} bg-gray-800 h-screen text-gray-100 p-5 max-w-[1660px] m-auto antialiased`}
       >
         <SessionProvider session={session}>{children}</SessionProvider>
       </body>
