@@ -78,9 +78,9 @@ const config: Config = {
     },
 
     backgroundImage: {
-      "bw-gradient-horizontal":
+      "gradient-horizontal":
         "linear-gradient(90deg, rgba(127,209,204,1) 0%, rgba(150,148,245,1) 100%)",
-      "bw-gradient-vertical":
+      "gradient-vertical":
         "linear-gradient(180deg, rgba(127,209,204,1) 0%, rgba(150,148,245,1) 100%)",
       sidebar: 'url("/background.svg")',
     },

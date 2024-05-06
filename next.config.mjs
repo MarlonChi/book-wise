@@ -6,6 +6,9 @@ const nextConfig = {
         hostname: "github.com",
       },
       {
+        hostname: "avatars.githubusercontent.com",
+      },
+      {
         hostname: "lh3.googleusercontent.com",
       },
       {
