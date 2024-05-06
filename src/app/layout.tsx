@@ -9,9 +9,11 @@ import "./globals.css";
 const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Book Wise",
-  description: "Book Wise",
-};
+  title: {
+    template: '%s | BookWise',
+    default: 'BookWise',
+  },
+}
 
 export default async function RootLayout({
   children,

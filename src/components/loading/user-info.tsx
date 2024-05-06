@@ -11,11 +11,11 @@ export function LoaderUserInfo() {
         </div>
       </div>
 
-      <div className="h-1 w-10 rounded-md bg-bw-gradient-vertical" />
+      <div className="h-1 w-10 rounded-md bg-gradient-vertical" />
 
       <div className="flex flex-col items-center gap-10 px-14 py-5">
         <div className="flex w-full items-center justify-start gap-5">
-          <Skeleton className="h-10 w-10 rounded text-bw-green-100" />
+          <Skeleton className="h-10 w-10 rounded text-green-100" />
           <div className="flex flex-col gap-2">
             <Skeleton className="h-5 w-20 rounded" />
             <Skeleton className="h-5 w-28 rounded" />
@@ -25,7 +25,7 @@ export function LoaderUserInfo() {
 
       <div className="flex flex-col items-center gap-10 px-14 py-5">
         <div className="flex w-full items-center justify-start gap-5">
-          <Skeleton className="h-10 w-10 rounded text-bw-green-100" />
+          <Skeleton className="h-10 w-10 rounded text-green-100" />
           <div className="flex flex-col gap-2">
             <Skeleton className="h-5 w-20 rounded" />
             <Skeleton className="h-5 w-28 rounded" />
@@ -35,7 +35,7 @@ export function LoaderUserInfo() {
 
       <div className="flex flex-col items-center gap-10 px-14 py-5">
         <div className="flex w-full items-center justify-start gap-5">
-          <Skeleton className="h-10 w-10 rounded text-bw-green-100" />
+          <Skeleton className="h-10 w-10 rounded text-green-100" />
           <div className="flex flex-col gap-2">
             <Skeleton className="h-5 w-20 rounded" />
             <Skeleton className="h-5 w-28 rounded" />
@@ -45,7 +45,7 @@ export function LoaderUserInfo() {
 
       <div className="flex flex-col items-center gap-10 px-14 py-5">
         <div className="flex w-full items-center justify-start gap-5">
-          <Skeleton className="h-10 w-10 rounded text-bw-green-100" />
+          <Skeleton className="h-10 w-10 rounded text-green-100" />
           <div className="flex flex-col gap-2">
             <Skeleton className="h-5 w-20 rounded" />
             <Skeleton className="h-5 w-28 rounded" />
